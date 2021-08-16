@@ -4,12 +4,14 @@ import VendingMachine from './VendingMachine';
 import Cheezies from './Cheezies';
 import Water from './Water';
 import SwedishFish from './SwedishFish';
+import NavBar from './NavBar';
 
 
 function App() {
   return (
-    <div classname="App">
+    <div className="App">
       <BrowserRouter>
+        <NavBar />
         <Route exact path="/">
           <VendingMachine />
         </Route>
